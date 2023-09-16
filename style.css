@@ -1,0 +1,1302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.page1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:  baseline;
+    background-image: url("https://images.unsplash.com/photo-1515503249716-e0175c9d8fab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.full-screen{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    transition: all ease 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+        background-color: black;
+}
+
+.overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+        background: #000;
+      }
+
+.nav{
+    width: 100%;
+    height: 8%;
+    background-color: gray;
+    opacity: 0.9;
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vmax;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+    width: 20%;
+    height: 90%;
+    /* background-color: saddlebrown; */
+}
+
+.nav h1{
+    width: 20%;
+    font-size: 1.2vmax;
+    color: white;
+    font-family: 'Macondo', cursive;
+    /* background-color: seagreen; */
+    display: flex;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    gap: 30px;
+    font-size: 1.2vmax;
+    list-style-type: none;
+
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li a:hover{
+    cursor: pointer;
+    color: black;
+    transition: all 2sec;
+}
+
+.nav h2 i{
+        font-size: 1.5vmax;
+}
+
+.nav h2 span button{
+    color: white;
+    border: none;
+    background-color: #C19976;
+    padding: 0.7vmax 1vmax;
+}
+
+.nav h3{
+    display: none;
+}
+
+.info{
+    width: 100%;
+    height:100%;
+    display: flex;
+    /* background-color: saddlebrown; */
+}
+
+.texts{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* margin-bottom: 25vmax; */
+    /* background-color: aqua; */
+}
+
+.texts h1{
+    margin-top: 12vmax;
+    margin-left: 5vmax;
+    opacity: 0.7;
+    font-size: 6vmax;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-family: 'Julee', cursive;
+}
+
+.texts span button{
+margin-left: 5vmax;
+margin-top: 3vmax;
+    padding: 0.7vmax 1.5vmax;
+    background-color: #222E3C;
+    border: 1px solid goldenrod;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.texts h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info span{
+    color: white;
+}
+
+
+/* * page1-reponsive----------------------------- */
+
+@media (max-width:600px) {
+    .page1{
+        width: 100%;
+        height: 50%;
+        display: flex;
+    }
+    
+    .nav{
+        width: 100%;
+        height: 8%;
+        background-color: gray;
+        opacity: 0.9;
+        overflow-x: hidden;
+    }
+
+    .nav ul{
+      display: none;
+    }
+
+    .nav h2{
+        display: none;
+    }
+
+    .nav h1{
+        width: 44%;
+        height: 60%;
+        /* background-color: crimson; */
+        font-size: 2.1vmax;
+    }
+
+    .logo{
+        width: 25%;
+        height: 90%;
+    }
+
+    .nav h3{
+        display: initial;
+        font-size: 4vmax;
+    }
+
+    .texts{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 10vmax;
+    }
+
+    .texts h1{
+        margin-left: 2vmax;
+        opacity: 0.8;
+        font-size: 4vmax;
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+        font-family: 'Julee', cursive;
+    }
+
+    .texts span button{
+        margin-left: 2vmax;
+            padding: 0.7vmax 1.5vmax;
+            background-color: #222E3C;
+            border: 1px solid goldenrod;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+
+        .full-screen ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+gap: 20px;
+        }
+
+        .full-screen ul li a{
+            display: flex;
+            gap: 20px;
+            color: white;
+font-size: 5vmax;
+text-align: center;
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+}
+}
+
+/* -------------page-1 end------------- */
+
+.page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #0E1317;
+}
+
+.chefword{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: salmon; */
+}
+
+.chef{
+    width: 23%;
+    height: 90%;
+    color: white;
+    box-shadow: 5px 5px 20px silver;
+    /* background-color: #C19976; */
+}
+
+.chef-s{
+width: 30%;
+height: 90%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+/* background-color: #C19976; */
+}
+
+.head{
+    width: 100%;
+    height: 17%;
+    display: flex;
+    margin-top: 1vmax;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: seagreen; */
+}
+
+.head p{
+    font-size: 1vmax;
+    font-family: 'Macondo', cursive;
+    color: goldenrod;
+    opacity: 0.8;
+}
+
+.head h1{
+    font-size: 2vmax;
+    color: white;
+    font-weight: 200;
+    font-family: 'Mooli', sans-serif;
+
+}
+
+
+.middle{
+    width: 100%;
+    height: 23%;
+    /* background-color: seagreen; */
+}
+
+.middle p{
+    font-size: 1.3vmax;
+    text-align: center;
+    font-family: 'Macondo', cursive;
+    color: white;
+}
+
+.bottom{
+    width: 100%;
+    height: 26%;
+    display: flex;
+    margin-top: 1vmax;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -5vmax;
+    /* background-color: seagreen; */
+}
+
+.bottom p{
+    font-size: 1.011vmax;
+    text-align: center;
+    line-height: 2vmax;
+    opacity: 0.7;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.signature{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    margin-top: 1vmax;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: seagreen; */
+}
+
+.signature h1{
+    font-size: 6vmax;
+    font-family: 'Allison', cursive;
+    color: #C69972;
+    transform: rotate(-30deg);
+}
+
+
+
+.chef img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.company{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: seagreen; */
+}
+
+.company h1{
+    color: white;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+/* page2-reponsive----------------------------- */
+
+@media (max-width:600px) {
+    .page2{
+        width: 100%;
+        height: 170%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #0E1317;
+        /* background-color: crimson;    */
+    }
+
+    .overlay{
+        width: 100%;
+        height: 50%;
+    }
+
+    .chefword{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        /* background-color: salmon; */
+    }
+
+    
+.chef{
+    width: 60%;
+    height: 80%;
+    color: white;
+    margin-top: 10vmax;
+    box-shadow: 5px 5px 20px silver;
+    /* background-color: #C19976; */
+}
+
+.chef-s{
+    width: 60%;
+    height: 70%;
+    margin-top: 2vmax;
+    /* background-color: #C19976; */
+}
+
+.head h2{
+font-size: 1.5vmax;
+}
+
+.middle{
+    width: 100%;
+    margin-top: 2vmax;
+    /* background-color: saddlebrown; */
+}
+.middle p{
+font-size: 1.5vmax;
+}
+
+.bottom{
+    margin-top: 1vmax;
+}
+
+.bottom p{
+    font-size: 1.2vmax;
+    line-height: -2vmax;
+}
+
+.signature{
+    width: 100%;
+    display: none;
+    /* background-color: saddlebrown; */
+}
+
+.company{
+    width: 100%;
+    height: 22%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vmax;
+    /* gap: 20px; */
+    /* background-color: saddlebrown; */
+}
+
+.company h1{
+    text-align: center;
+    font-size: 2.2vmax;
+}
+
+    
+}
+
+/* -------------page-2 end------------------------- */
+
+.page3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #161B21;
+}
+
+.header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    /* background-color: steelblue; */
+}
+
+.header p{
+    font-size: 1.2vmax;
+       color: goldenrod;
+       opacity: 0.8;
+    font-family: 'Macondo', cursive;
+
+}
+
+.header h1{
+    font-family: 'Mooli', sans-serif;
+color: white;
+font-weight: 200;
+}
+
+.header h2{
+color: white;
+}
+
+.slider{
+    width: 100%;
+    height: 70%;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* background-color: steelblue; */
+}
+
+.slider::-webkit-scrollbar{
+    display: none;
+}
+
+.sliders{
+    width: 45%;
+    height: 90%;
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.sliders img{
+    width: 100%;
+    height: 88%;
+    object-fit: cover;
+}
+
+.sliders h1{
+    color: white;
+    z-index: 99;
+    font-family: 'Satisfy', cursive;
+}
+
+
+/* ---------------responsive------------------ */
+
+@media (max-width:600px){
+    .page3{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #161B21;
+    }
+
+    .header{
+        width: 100%;
+        height: 18%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-around;
+        /* background-color: steelblue; */
+    }
+
+    .header p{
+        font-size: 1.8vmax;
+        color: goldenrod;
+        font-family: 'Macondo', cursive;
+    
+    }
+    
+    .header h1{
+        font-size: 2.2vmax;
+        font-family: 'Mooli', sans-serif;
+    color: white;
+    font-weight: 200;
+    }
+    
+    .header h2{
+        font-size: 1.5vmax;
+    color: white;
+    }
+
+    .slider{
+        width: 100%;
+        height: 70%;
+        padding: 15px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        /* background-color: steelblue; */
+    }
+
+    .sliders{
+        width: 70%;
+        height: 90%;
+        display: inline-block;
+        /* display: flex; */
+        overflow: hidden;
+        margin-right: 10px;
+    }
+
+    .sliders img{
+        width: 100%;
+        height: 88%;
+        object-fit: cover;
+    }
+    
+    .sliders h1{
+        color: white;
+        z-index: 99;
+        font-size: 2.5vmax;
+        /* background-color: saddlebrown; */
+        font-family: 'Satisfy', cursive;
+    }
+
+}
+
+/* -----------page3 -end---------------------- */
+
+.page4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #18181A;
+}
+
+.left{
+width: 50%;
+height: 80%;
+/* box-shadow: 10px 10px 20px black; */
+background-color: #18181A;
+}
+
+.left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right{
+width: 40%;
+height: 80%;
+/* background-color: aqua; */
+}
+ 
+.menu-head{
+    width: 100%;
+    height: 20%;
+    /* background-color: crimson; */
+}
+
+.menu-head p{
+    font-family: 'Macondo', cursive;
+    color: goldenrod;
+    opacity: 0.8;
+font-size: 1.8vmax;
+}
+
+.menu-head h1{
+    font-size: 3vmax;
+    font-family: 'Mooli', sans-serif;
+color: white;
+font-weight: 200;
+}
+
+.menu-head h3{
+    color: white;
+}
+
+.menu-list{
+width: 100%;
+height: 60%;
+margin-top: 2vmax;
+/* background-color: crimson; */
+}
+
+.menu-list h1{
+    font-size: 1.5vmax;
+    color: white;
+    font-weight: 200;
+    font-family: 'Mooli', sans-serif;
+}
+
+.menu-list p{
+    font-family: 'Montserrat', sans-serif;
+    color: wheat;
+}
+
+.menu-list h2{
+    font-size: 1.5vmax;
+    color: white;
+    font-weight: 200;
+    font-family: 'Mooli', sans-serif;
+}
+
+.menu-list h3{
+    font-size: 1.48vmax;
+    color: white;
+    font-weight: 200;
+    font-family: 'Mooli', sans-serif;
+}
+
+.menu-list h4{
+    font-size: 1.47vmax;
+    color: white;
+    font-weight: 200;
+    font-family: 'Mooli', sans-serif;
+}
+
+.menu-button{
+width: 100%;
+height: 10%;
+/* background-color: seagreen; */
+}
+
+.menu-button span button{
+    padding: 0.7vmax 1.5vmax;
+    background-color: #222E3C;
+    border: 1.5px solid goldenrod;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+/* --------------------responsive start---------------- */
+
+@media (max-width:600px){
+    
+.page4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #18181A;
+}
+
+.left{
+width: 90%;
+height: 60%;
+/* box-shadow: 10px 10px 20px black; */
+background-color: #18181A;
+}
+
+.left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right{
+width: 90%;
+height: 80%;
+/* background-color: aqua; */
+}
+
+.menu-head h3{
+    margin-top: -1vmax;
+    color: white;
+}
+
+.menu-list{
+    width: 100%;
+    height: 60%;
+    margin-top: 3vmax;
+    /* background-color: crimson; */
+    }
+
+    .menu-list p{
+        font-size: 1.3vmax;
+    }
+
+    .menu-button{
+        width: 100%;
+        height: 10%;
+        margin-top: -2vmax;
+        /* background-color: seagreen; */
+        }
+}
+
+/* -------------pagge-4 end------------------- */
+
+.page5{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+background-color: #161B21;
+}
+
+.add{
+    width: 15%;
+    height: 80%;
+    /* background-color: saddlebrown; */
+}
+
+.add h1{
+    font-size: 3vmax;
+    font-weight: 200;
+    color: #C09876;
+    text-align: center;
+    font-family: 'Mooli', sans-serif;
+}
+
+.add p{
+    font-size: 1.5vmax;
+    font-family: 'Satisfy', cursive;
+    color: wheat;
+    text-align: center;
+
+}
+
+/* -----------responsive----------------- */
+@media (max-width:600px) {
+    
+    .page5{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    background-color: #161B21;
+    }
+
+    .add{
+        width: 20%;
+        height: 80%;
+        margin-top: 2vmax;
+        /* background-color: saddlebrown; */
+    }
+
+    .add h1{
+        font-size: 2.3vmax;
+        font-weight: 200;
+        color: #C09876;
+        text-align: center;
+        font-family: 'Mooli', sans-serif;
+    }
+    
+    .add p{
+        font-size: 1.2vmax;
+        font-family: 'Satisfy', cursive;
+        color: wheat;
+        text-align: center;
+    
+    }
+
+}
+
+/* ------------------page-5 end----------------------- */
+
+.page6{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #0E1317;
+}
+
+.headings{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: saddlebrown; */
+}
+
+.headings p{
+    font-size: 1.5vmax;
+    opacity: .8;
+    font-family: 'Macondo', cursive;
+    color: rgba(218, 165, 32, 0.904) ;
+}
+
+.headings h1{
+    font-family: 'Mooli', sans-serif;
+font-weight: 200;
+color: wheat;
+}
+
+.headings h2{
+color: wheat;
+}
+
+.recipes{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.recipe-box{
+    width: 20%;
+    height: 100%;
+    box-shadow: 2px 5px 18px silver;
+    /* border-radius: 1vmax; */
+    /* background-color: seagreen; */
+}
+
+.recipe-box p{
+    padding: 0.2vmax 0.5vmax;
+    font-family: 'Macondo', cursive;
+font-size: 1.2vmax;
+opacity: .7;
+ color:  rgba(218, 165, 32, 0.904) ;  
+}
+
+.recipe-box h1{
+    padding: 0.2vmax 0.5vmax;
+    font-size: 1vmax;
+    font-family: 'Mooli', sans-serif;
+font-weight: 100;
+color: wheat;
+}
+
+
+.recipe-box h2{
+    margin-top: -1vmax;
+    opacity: .4;
+    color: rgba(218, 165, 32, 0.904);
+}
+
+.recipe-box img{
+    width: 100%;
+    height: 75%;
+    /* border-radius: 1vmax; */
+    object-fit: cover;
+}
+
+.btn-btn{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-btn span button{
+    padding: 0.9vmax 1.5vmax;
+    background-color: #222E3C;
+    border: 1.5px solid goldenrod;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+/* -----------responsive----------------- */
+@media (max-width:600px){
+    .page6{
+        width: 100%;
+        height: 150%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #0E1317;
+    }
+
+    .headings{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* gap: 15px; */
+        /* background-color: saddlebrown; */
+    }
+
+    .headings p{
+        font-size: 1.8vmax;
+        font-family: 'Macondo', cursive;
+        color: rgba(218, 165, 32, 0.904) ;
+    }
+    
+    .headings h1{
+        font-size: 2vmax;
+        font-family: 'Mooli', sans-serif;
+    font-weight: 200;
+    color: wheat;
+    }
+
+    .headings h2{
+        font-size: 1.5vmax;
+    color: wheat;
+    }
+
+    .recipes{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: space-between;
+        /* background-color: aqua; */
+    }
+
+    .recipe-box{
+        width: 60%;
+        height: 32%;
+        box-shadow: 2px 5px 18px silver;
+    }
+
+    .recipe-box p{
+        padding: 0.2vmax 0.6vmax;
+        font-family: 'Macondo', cursive;
+    font-size: 1.5vmax;
+    opacity: .9;
+     color:  rgba(218, 165, 32, 0.904) ;  
+    }
+    
+    .recipe-box h1{
+        margin-top: 0.5vmax;
+        padding: 0.2vmax 0.6vmax;
+        font-size: 1.2vmax;
+        font-family: 'Mooli', sans-serif;
+    font-weight: 100;
+    color: wheat;
+    }
+    
+    
+    .recipe-box h2{
+        margin-top: -0.8vmax;
+        opacity: .6;
+        color: rgba(218, 165, 32, 0.904);
+    }
+
+    .recipe-box img{
+        width: 100%;
+        height: 75%;
+        /* border-radius: 1vmax; */
+        object-fit: cover;
+    }
+
+
+}
+
+/* -------------page-6 end------------------ */
+
+.page7{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 15vmax;
+    justify-content: space-around;
+    background-color: #161B21;
+}
+
+.head1 h1{
+    font-size: 3vmax;
+    font-family: 'Mooli', sans-serif;
+font-weight: 400;
+color: wheat;
+    text-align: center;
+}
+
+.forms{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: salmon; */
+}
+
+.forms form{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    color: black;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+
+.forms form input{
+    height: 50%;
+}
+
+.page7 button span{
+    padding: 0.9vmax 1.5vmax;
+    background-color: #222E3C;
+    border: 1.5px solid goldenrod;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+@media (max-width:600px){
+
+}
+
+/* -------------page7-end----------------- */
+
+.page8{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #090D10;
+}
+
+.contacts{
+    width: 25%;
+    height: 90%;
+    /* background-color: darkblue; */
+}
+
+.contacts h2{
+    color: goldenrod;
+    opacity: 0.8;
+font-size: 2vmax;
+font-family: 'Satisfy', cursive;
+}
+
+
+.contacts h1{
+    margin-top: 1.5vmax;
+    font-size: 2vmax;
+    font-family: 'Macondo', cursive;
+    opacity: 0.9;
+font-weight: 400;
+text-align: center;
+color: wheat;
+    text-align: center;
+}
+
+.restro{
+    width: 30%;
+    height: 90%;
+    /* background-color: darkblue; */
+}
+
+.restro h2{
+    font-family: 'Satisfy', cursive;
+    color: goldenrod;
+opacity: 0.8;
+text-align: center;
+font-size: 2vmax
+}
+
+.restro h1{
+    margin-top: 1.5vmax;
+    font-size: 1.5vmax;
+    font-family: 'Macondo', cursive;
+    opacity: 0.9;
+    font-weight: 400;
+    text-align: center;
+    color: wheat;
+    text-align: center;
+}
+
+
+.restro h3{
+    text-align: center;
+    margin-top: 2vmax;
+    font-size: 1.8vmax;
+    color: white;
+}
+
+.restro h3 i{
+    background-color: transparent;
+border-radius: 30px;
+border: 1px solid white;
+}
+
+.working-hours{
+    width: 30%;
+    height: 90%;
+    /* background-color: darkblue; */
+}
+
+.working-hours h2{
+    font-family: 'Satisfy', cursive;
+    color: goldenrod;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 2vmax
+}
+
+.working-hours h1{
+    margin-top: 1.5vmax;
+    font-size: 1.5vmax;
+    font-family: 'Macondo', cursive;
+    opacity: 0.9;
+    font-weight: 400;
+    /* text-align: center; */
+    color: wheat;
+    text-align: center;
+}
+
+/* -----------responsive----------------- */
+
+@media (max-width:600px){
+    .page8{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+        background-color: #090D10;
+    }
+    
+    .contacts{
+        width: 30%;
+        height: 90%;
+        margin-top: 2vmax;
+        /* background-color: darkblue; */
+    }
+
+    .contacts h2{
+        color: goldenrod;
+        opacity: 0.8;
+    font-size: 1.5vmax;
+    font-family: 'Satisfy', cursive;
+    }
+
+    .contacts h1{
+        margin-top: 3vmax;
+        font-size: 1.4vmax;
+        text-align: start;
+        font-family: 'Macondo', cursive;
+    }
+
+    .restro{
+        width: 30%;
+        height: 90%;
+        margin-top: 2vmax;
+
+        /* background-color: darkblue; */
+    }
+
+    .restro h2{
+        font-family: 'Satisfy', cursive;
+        color: goldenrod;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 1.5vmax
+    }
+    
+    .restro h1{
+        margin-top: 1.5vmax;
+        font-size: 1vmax;
+        font-family: 'Macondo', cursive;
+        opacity: 0.9;
+        font-weight: 400;
+        text-align: center;
+        color: wheat;
+        text-align: center;
+    }
+
+    .working-hours{
+        width: 30%;
+        height: 90%;
+        margin-top: 2vmax;
+
+    }
+
+    .working-hours h2{
+        font-family: 'Satisfy', cursive;
+        color: goldenrod;
+        opacity: 0.8;
+        text-align: center;
+        font-size: 1.5vmax
+    }
+
+    
+}
+
+/* ------------page-8 end---------------- */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7%;
+    background-color: #090D10;
+}
+
+footer p{
+    font-family: 'Mooli', sans-serif;
+    opacity: 0.8;
+    color: wheat;
+    font-size: 1.2vmax;
+    text-align: center;
+}
+
